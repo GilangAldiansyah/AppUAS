@@ -14,10 +14,8 @@ return new class extends Migration
         Schema::create('penerimas', function (Blueprint $table) {
             $table->id();
             $table->char('penerima');
-            $table->char('penerima');
+            $table->bigInteger('no_hp');
             $table->char('alamat');
-            $table->id();
-
             $table->timestamps();
         });
     }
